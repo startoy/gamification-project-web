@@ -1,0 +1,6 @@
+WWWForm form = new WWWForm();
+form.AddField( "name", name );
+form.AddField( "score", score );
+form.AddField( "hash", hash );
+
+WWW postRequest = new WWW( server_url, form );
